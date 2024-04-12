@@ -1,46 +1,49 @@
+/* Flexbox styles for contact content */
 ul.contact-content {
-  width: 100%;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .contact-area {
-  position: relative;
-  min-height: 100vh;
+    position: relative;
+    min-height: 100vh;
 }
 
 .contact-content li {
-  padding: 0 30px;
-  flex-basis: 33%;
-  text-align: center;
+    padding: 0 30px;
+    flex-basis: 33%;
+    text-align: center;
 }
 
 .contact-content li i {
-  font-size: 50px;
-  color: #852522;
-  margin-bottom: 25px;
+    font-size: 50px;
+    color: #852522;
+    margin-bottom: 25px;
 }
 
 .contact-content li p {
-  margin: 0;
+    margin: 0;
 }
 
-@media (max-width: 1000px) {
-  .contact-content li {
-    flex-basis: 100%;
-    margin-bottom: 65px;
-  }
+@media (max-width: 992px) {
+    .contact-content li {
+        flex-basis: 100%;
+        margin-bottom: 65px;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        font-size: 2rem;
+    }
 
-  .contact-content li:last-child {
-    margin-bottom: 0;
-  }
+    .contact-content li:last-child {
+        margin-bottom: 0;
+    }
 
-  .contact-content li p {
-    padding: 0;
-  }
+    .contact-content li p {
+        padding: 0;
+    }
 }
