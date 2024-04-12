@@ -1,73 +1,83 @@
 header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #fff;
-  padding: 35px 100px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 35px 100px 0;
 }
 
 header h2 span {
-  color: #852522;
+    color: #852522;
 }
 
 header ul.nav {
-  display: flex;
+    display: flex;
 }
 
 header ul.nav li {
-  margin: 0 15px;
+    margin: 0 15px;
 }
 
 header ul.nav li:first-child {
-  margin-left: 0;
+    margin-left: 0;
 }
 
 header ul.nav li:last-child {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
 .logo img {
-  width: 50px;
-  height: 70px;
+    width: 50px;
+    height: 70px;
 }
 
 @media (max-width: 1000px) {
-  header {
-    padding: 20px 50px;
-  }
+    header {
+        padding: 20px 50px;
+    }
 }
 
-@media (max-width: 700px) {
-  header {
-    flex-direction: column;
-    padding: 20px 30px;
-  }
 
-  header h2 {
-    margin-bottom: 15px;
-  }
 
-  header ul.nav {
-    margin-top: 15px;
-  }
 
-  header ul.nav li {
-    margin: 0 7px;
-  }
+@media only screen and (max-width: 992px) {
+    header {
+        flex-direction: column;
+        padding: 30px 30px;
+        font-size: 2rem;
+    }
 
-  .about-right p {
-    display: none;
-  }
+    header h2 {
+        margin-bottom: 15px;
+    }
+
+    header ul.nav {
+        font-size: 1.5rem;
+    }
+
+    header ul.nav li {
+        margin: 0 7px;
+    }
+
+    .about-right p {
+        display: none;
+    }
+
+    .logo img {
+        width: 75px;
+        height: 100px;
+    }
 }
+

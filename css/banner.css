@@ -50,20 +50,19 @@
   text-transform: uppercase;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 992px) {
   .banner-area {
-    min-height: 600px;
+    min-height: 100vh;
   }
 
   .banner-area h1 {
-    font-size: 27px;
+    font-size: 6rem;
   }
 
   .banner-area h3 {
-    font-size: 20px;
+    font-size: 2rem;
+    letter-spacing: 2px;
   }
 
-  .banner-area a.banner-btn {
-    padding: 8px 20px;
-  }
+
 }
